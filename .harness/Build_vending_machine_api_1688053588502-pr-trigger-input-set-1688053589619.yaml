@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_vending_machine_api_1688053588502-pr-trigger-input-set
+  identifier: Build_vending_machine_api_1688053588502prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_vending_machine_api_1688053588502
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>

@@ -14,6 +14,16 @@ pipeline:
             steps:
               - step:
                   type: Run
+                  name: Install project dependecies
+                  identifier: Install_project_dependecies
+                  spec:
+                    connectorRef: cipherdockerconnector
+                    image: node
+                    shell: Sh
+                    command: npm install
+                isContainerStepGroup: false
+              - step:
+                  type: Run
                   name: Build project
                   identifier: Echo_Welcome_Message
                   spec:

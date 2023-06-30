@@ -17,8 +17,8 @@ pipeline:
                   name: Build project
                   identifier: Echo_Welcome_Message
                   spec:
-                    connectorRef: account.harnessImage
-                    image: alpine
+                    connectorRef: cipherdockerconnector
+                    image: node
                     shell: Sh
                     command: npm run build
                   description: Build project
@@ -27,6 +27,8 @@ pipeline:
                   name: Run test
                   identifier: Run_test
                   spec:
+                    connectorRef: cipherdockerconnector
+                    image: node
                     shell: Sh
                     command: npm run test
                   description: Run test

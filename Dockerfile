@@ -1,5 +1,5 @@
 FROM node:16-alpine
-LABEL Maintainer="victor mazeli <victor.vic.mazeli@gmail.com>"
+LABEL Maintainer="victor mazeli <cyphertech12@gmail.com>"
 # Create app directory
 WORKDIR /usr/src/app
 

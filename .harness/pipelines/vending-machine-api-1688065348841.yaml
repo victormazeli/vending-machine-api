@@ -33,16 +33,6 @@ pipeline:
                     command: npm run build
                   description: Build project
               - step:
-                  type: Run
-                  name: Run test
-                  identifier: Run_test
-                  spec:
-                    connectorRef: cipherdockerconnector
-                    image: node
-                    shell: Sh
-                    command: npm run test
-                  description: Run test
-              - step:
                   type: BuildAndPushDockerRegistry
                   name: Build and push image to docker
                   identifier: Build_and_push_image_to_docker

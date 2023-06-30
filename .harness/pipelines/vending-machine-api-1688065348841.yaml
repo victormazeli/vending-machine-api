@@ -37,8 +37,8 @@ pipeline:
                   name: Build and push image to docker
                   identifier: Build_and_push_image_to_docker
                   spec:
-                    connectorRef: <+input>
-                    repo: <+input>
+                    connectorRef: cipherdockerconnector
+                    repo: cipher2022/vending-api
                     tags:
                       - latetest
           platform:
